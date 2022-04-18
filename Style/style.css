@@ -1,0 +1,50 @@
+#wire-frame {
+    background: #777;
+    color: #ebebeb;
+    display: grid;
+    padding: 0px 25px 25px 25px;
+    margin: -8px;
+    height: 100vh;
+}
+
+.content {
+    background: #ebebeb;
+    color: #777;
+    text-align: center;
+    padding: 25px;
+    margin: 10px 25px 25px 25px;
+}
+
+#inside-content {
+    display: grid;
+    grid-column: 1fr 1fr;
+    grid-template-areas:
+        "section aside"
+}
+
+#section-content {
+    grid-area: section;
+    background: #ebebeb;
+    color: #777;
+    margin-left: 25px;
+    text-align: center;
+}
+
+#article-content {
+    background: #777;
+    color: #ebebeb;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-bottom: 25px;
+    display: grid;
+    grid-row: 1fr 1fr 1fr;
+}
+
+#aside-content {
+    grid-area: aside;
+    background: #ebebeb;
+    color: #777;
+    margin-left: 10px;
+    margin-right: 25px;
+    text-align: center;
+}
